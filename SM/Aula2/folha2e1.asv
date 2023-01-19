@@ -1,0 +1,55 @@
+%%folha 2
+%1 a)
+
+T = 0:0.01:5;
+x = (4*pi*T);
+
+fx = 2.*sin(x);
+
+%plot(x,fx,LineWidth=2)
+
+legend('sen(4*pi*T)')
+xlabel('xx')
+ylabel('yy')
+
+%1 b)
+T = 0:0.01:5;
+y = (10*pi*T);
+
+fy = cos(y);
+
+%plot(y,fy,LineWidth=2)
+
+legend('cos(10*pi*T)')
+xlabel('xx')
+ylabel('yy')
+
+
+%1 c)
+% 𝑧(𝑡) = 𝑥(𝑡)𝑦(𝑡)
+
+z = fx.*fy;
+%plot(z)
+
+%1 d)𝑤(𝑡) = 3 sin(𝜋𝑡) + 2 sin(6𝜋𝑡) , 𝑡 ∈ [0; 10]
+
+t = 0:0.01:10;
+w = pi*t;
+
+fw = 3.*sin(w)+2.+sin(6*w);
+%plot(w,fw)
+legend('3 sin(𝜋𝑡) + 2 sin(6𝜋𝑡)')
+xlabel('xx')
+ylabel('yy')
+
+
+%1 e) q(t1,t2)= 2*sin(2*pi(2*t1+t2))
+
+
+tt = 0:0.01:5;
+c =2*tt+tt;
+fc = 2*sin(2*pi*(c));
+plot(c,fc)
+
+
+

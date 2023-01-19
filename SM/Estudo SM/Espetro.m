@@ -1,0 +1,16 @@
+function [X,f] = Espetro(x,Ta,w)
+
+    if w
+        x=x'.*blackman(length(x));
+    end
+
+    N=length(x);
+    X=fft(x)/N;
+    X=fftshift(X);
+
+    fa=1/Ta;
+    df=1/(N*Ta);
+    f=(0:(N-1))*df-fa/2;
+    
+    stem(f, abs(X));
+end
