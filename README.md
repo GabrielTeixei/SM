@@ -9,8 +9,8 @@
 
 Notas:
 
-    -1ºtesteP-19.5
+1ºtesteP-19.5
     
-    -2ºtesteP-17.5
+2ºtesteP-17.5
     
-    -3ºtesteP-15
+3ºtesteP-15
